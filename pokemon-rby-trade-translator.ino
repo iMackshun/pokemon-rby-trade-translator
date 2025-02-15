@@ -184,7 +184,7 @@ const unsigned char englishPokemonNameData[] PROGMEM  = {
 };
 
 //1650 Byte Array of Data containing Encoded Japanese Pokemon Names (11 Bytes Each, although technically just 6)
-const unsigned char japaneseNameData[] PROGMEM  = {
+const unsigned char japanesePokemonNameData[] PROGMEM  = {
   0x9b, 0x8b, 0x06, 0x0f, 0x17, 0x50, 0x50, 0x50, 0x50, 0x50, 0x50, 0x9b, 0x8b, 0x06, 0x8e, 0x82, 
   0x50, 0x50, 0x50, 0x50, 0x50, 0x50, 0x9b, 0x8b, 0x06, 0x19, 0x14, 0x50, 0x50, 0x50, 0x50, 0x50, 
   0x50, 0x9a, 0x93, 0x85, 0x08, 0x50, 0x50, 0x50, 0x50, 0x50, 0x50, 0x50, 0xd8, 0x0a, 0xe3, 0x13, 
@@ -1161,7 +1161,7 @@ void UpdateStates(unsigned int* activeLinkStateIndex){
             if(pokemonDexID != -1){
               signed short nameDataOffset = (pokemonDexID - 1) * 11;
               for(signed int i = 0; i < 6; i++){
-                translatedIncomingBufferDataB[i] = pgm_read_byte_near(japaneseNameData + nameDataOffset + i);
+                translatedIncomingBufferDataB[i] = pgm_read_byte_near(japanesePokemonNameData + nameDataOffset + i);
               }
               translatedIncomingBufferBLength = 6;
               translatedIncomingBufferBPosition = 1;
@@ -1178,7 +1178,7 @@ void UpdateStates(unsigned int* activeLinkStateIndex){
               if(pokemonDexID != -1){
                 signed short nameDataOffset = (pokemonDexID - 1) * 11;
                 for(signed int i = 0; i < 6; i++){
-                  translatedIncomingBufferDataB[i] = pgm_read_byte_near(japaneseNameData + nameDataOffset + i);
+                  translatedIncomingBufferDataB[i] = pgm_read_byte_near(japanesePokemonNameData + nameDataOffset + i);
                 }
                 translatedIncomingBufferBLength = 6;
                 translatedIncomingBufferBPosition = 1;
@@ -1203,7 +1203,7 @@ void UpdateStates(unsigned int* activeLinkStateIndex){
               if(pokemonDexID != -1){
                 signed short nameDataOffset = (pokemonDexID - 1) * 11;
                 for(signed int i = 0; i < 6; i++){
-                  translatedIncomingBufferDataB[i] = pgm_read_byte_near(japaneseNameData + nameDataOffset + i);
+                  translatedIncomingBufferDataB[i] = pgm_read_byte_near(japanesePokemonNameData + nameDataOffset + i);
                 }
                 translatedIncomingBufferBLength = 6;
                 translatedIncomingBufferBPosition = 1;
@@ -1228,7 +1228,7 @@ void UpdateStates(unsigned int* activeLinkStateIndex){
               if(pokemonDexID != -1){
                 signed short nameDataOffset = (pokemonDexID - 1) * 11;
                 for(signed int i = 0; i < 6; i++){
-                  translatedIncomingBufferDataB[i] = pgm_read_byte_near(japaneseNameData + nameDataOffset + i);
+                  translatedIncomingBufferDataB[i] = pgm_read_byte_near(japanesePokemonNameData + nameDataOffset + i);
                 }
                 translatedIncomingBufferBLength = 6;
                 translatedIncomingBufferBPosition = 1;
@@ -1253,7 +1253,7 @@ void UpdateStates(unsigned int* activeLinkStateIndex){
               if(pokemonDexID != -1){
                 signed short nameDataOffset = (pokemonDexID - 1) * 11;
                 for(signed int i = 0; i < 6; i++){
-                  translatedIncomingBufferDataB[i] = pgm_read_byte_near(japaneseNameData + nameDataOffset + i);
+                  translatedIncomingBufferDataB[i] = pgm_read_byte_near(japanesePokemonNameData + nameDataOffset + i);
                 }
                 translatedIncomingBufferBLength = 6;
                 translatedIncomingBufferBPosition = 1;
@@ -1278,7 +1278,7 @@ void UpdateStates(unsigned int* activeLinkStateIndex){
               if(pokemonDexID != -1){
                 signed short nameDataOffset = (pokemonDexID - 1) * 11;
                 for(signed int i = 0; i < 6; i++){
-                  translatedIncomingBufferDataB[i] = pgm_read_byte_near(japaneseNameData + nameDataOffset + i);
+                  translatedIncomingBufferDataB[i] = pgm_read_byte_near(japanesePokemonNameData + nameDataOffset + i);
                 }
                 translatedIncomingBufferBLength = 6;
                 translatedIncomingBufferBPosition = 1;
