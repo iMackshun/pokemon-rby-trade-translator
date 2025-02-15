@@ -1,5 +1,5 @@
 # pokemon-RBY-trade-translator
-A program that allows for trading between English and Japanese Gen 1 Pokemon Games without corruption due to the differing text encodings used within the games. Created for use with an Arduino Uno R3 or Arduino Mega, but should work with most modern microcontrollers.
+A program that allows for trading between English and Japanese Gen 1 Pokemon Games without corruption due to the differing text encodings used within the games. Created for use with an Arduino Uno R3 or Arduino Mega, but could be adapted to work with most modern microcontrollers with slight modifications.
 
 ## How It Works
 - This program fixes the save corruption that occurs when trading Pokemon between English and Japanese by replacing the Trainer Name and Pokemon OT names with a hard-coded list of bytes set within the program to match the text encoding within that corresponding game, and Pokemon Nicknames with that Pokemon's default name, using the text encoding from that corresponding game. The Arduino serves as the Master of the communication, and exchanges data between each Gameboy. Whenever the Arduino detects that region-specific data is about to be exchanged, it intercepts and sends data to match that game's respective text encoding.  
