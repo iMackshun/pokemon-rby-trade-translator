@@ -45,5 +45,5 @@ Before using the program, a few modifications need to be made:
 7. If any hanging occurs, disconnect and restart each Gameboy, and then return to Step 3.
 
 # Known Issues
--Sometimes, the communication will hang during certain steps of the trade process. This is seemingly random, so whenever it occurs, try again.
+-Sometimes, the communication will hang during certain steps of the trade process. This is seemingly random, so whenever it occurs, disconnect and reset each Gameboy and try again.
 
