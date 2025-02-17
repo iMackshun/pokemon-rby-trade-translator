@@ -5,6 +5,9 @@ A program that allows for trading between English and Japanese Gen 1 Pokemon Gam
 - This program fixes the save corruption that occurs when trading Pokemon between English and Japanese by replacing the Trainer Name and Pokemon OT names with a hard-coded list of bytes set within the program to match the text encoding within that corresponding game, and Pokemon Nicknames with that Pokemon's default name, using the text encoding from that corresponding game. The Arduino serves as the Master of the communication, and exchanges data between each Gameboy. Whenever the Arduino detects that region-specific data is about to be exchanged, it intercepts and sends data to match that game's respective text encoding.  
 - Within the program, englishPokemonNameData and japanesePokemonNameData contains the bytes that make up all of the Pokemon Names using the encoding table associated with that language. By modifying these, this script can easily be modified to work with other languages. This does mean that the Pokemon's nickname will be reset, but I believe you can just go to the Nickname Rater to restore the nickname.
 
+## Demonstration
+- [Demonstration Video of Gen 1 Eng -> Jap Trading](https://youtu.be/oHqZHKHHP7U)
+
 ## Hardware Needed
 - An Arduino Uno R3/Mega (Or Any Other Compatible Microcontroller)  
 - A DMG Gameboy Running An English Copy of Pokemon Red, Blue, Or Yellow  
@@ -47,4 +50,12 @@ Before using the program, a few modifications need to be made:
 
 ## Known Issues
 - Sometimes, the communication will hang during certain steps of the trade process. This is seemingly random, so whenever it occurs, disconnect and reset each Gameboy and try again.
+
+## Resources
+- http://www.adanscotney.com/2014/01/spoofing-pokemon-trades-with-stellaris.html
+- https://github.com/pret/pokeyellow
+- https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_data_structure_(Generation_I)
+- https://bulbapedia.bulbagarden.net/wiki/Character_encoding_(Generation_I)
+- https://gbdev.io/pandocs/
+- https://www.youtube.com/watch?v=h1KKkCfzOws&t=151s&ab_channel=Goppier
 
