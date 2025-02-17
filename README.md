@@ -51,6 +51,9 @@ Before using the program, a few modifications need to be made:
 ## Known Issues
 - Sometimes, the communication will hang during certain steps of the trade process. This is seemingly random, so whenever it occurs, disconnect and reset each Gameboy and try again.
 
+## Extras
+- I included PulseView files that contain the signals sent from the games during various stages of the communication. I captured them using a Logic Analyzer I got from Amazon. Feel free to take a look at them if you'd like to see exactly what gets sent, and what the code on the Arduino is trying to replicate.
+
 ## Resources
 - http://www.adanscotney.com/2014/01/spoofing-pokemon-trades-with-stellaris.html
 - https://github.com/pret/pokeyellow
