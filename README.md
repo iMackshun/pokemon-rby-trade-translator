@@ -22,7 +22,7 @@ A program that allows for trading between English and Japanese Gen 1 Pokemon Gam
 - Arduino Pin 6 -> (B) DMG-04 Link Cable Serial In (Orange Wire)  
 - Arduino Pin 7 -> (B) DMG-04 Link Cable Serial Out (Red Wire)  
 - Arduino GND -> (A) DMG-04 Link Cable Ground  
-- Arduino GND -> (A) DMG-04 Link Cable Ground  
+- Arduino GND -> (B) DMG-04 Link Cable Ground  
 
 ## Disclaimer
 - I am not responsible for any damage or data loss that may occur while attempting to use this program. Use at your own risk. That being said, you can essentially see all of the data on the Trade screen, so if anything looks off there, cancel the trade. The trade only occurs after both players have confirmed, and thus the SRAM isn't at all touched until you confirm the trade.
